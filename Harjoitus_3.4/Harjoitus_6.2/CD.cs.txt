@@ -1,0 +1,17 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Harjoitus_6._2
+{
+    class CD
+    {
+        public string Album{ get; set; }
+        public string Artis { get; set; }
+
+        
+
+    }
+}

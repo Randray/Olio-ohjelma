@@ -1,0 +1,77 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+
+namespace Harjoitus_4._5
+{
+    class Radio
+    {
+        private int volume;
+        private float channel;
+        private int onoff;
+
+        public void Volume()
+        {
+            Console.WriteLine("Set volume(0-9):");
+            volume = int.Parse(Console.ReadLine());
+
+            if (volume < 0)
+            {
+                Console.WriteLine("Error");
+            }
+            if(volume>0 && volume < 9)
+            {
+                Console.WriteLine("Volume is set to: " + volume);
+            }
+            if (volume > 9)
+            {
+                Console.WriteLine("Error");
+            }
+
+
+        }
+
+        public void Channels()
+        {
+            Console.Write("Set Channel(2000.0-2600.0):");
+            channel = float.Parse(Console.ReadLine());
+
+            if (channel < 2000.0f)
+            {
+                Console.WriteLine("Channel unknow");
+            }
+
+            if (channel > 2000.0f )
+            {
+                Console.WriteLine("Channel is set: "+ channel);
+            }
+
+            if (channel > 2600.0f)
+            {
+                Console.WriteLine("Channel unknow");
+            }
+
+       
+
+        }
+
+
+
+        public void Onoff()
+        {
+            Console.Write("1.ON/ 2.OFF ");
+            onoff = int.Parse(Console.ReadLine());
+
+            if (onoff == 1) { Console.WriteLine("Radio is on"); }
+            if (onoff == 2)
+            {
+                Console.WriteLine("Bye Bye");
+                Environment.Exit(0); }
+        }
+
+
+    }
+}

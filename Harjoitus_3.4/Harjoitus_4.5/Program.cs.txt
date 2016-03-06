@@ -1,0 +1,48 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Harjoitus_4._5
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int valinta = 0;
+
+            Radio radio = new Radio();
+
+            radio.Onoff();
+
+            do
+            {
+                Console.WriteLine("What u want to do:");
+                Console.WriteLine("1. Change Volume.");
+                Console.WriteLine("2. Change Channel");
+                Console.WriteLine("3. Turn off the radio");
+                Console.Write("choise: ");
+
+                valinta = int.Parse(Console.ReadLine());
+
+
+                if (valinta == 1)
+                {
+                    radio.Volume();
+                }
+                if (valinta == 2)
+                {
+                    radio.Channels();
+                }
+                if (valinta == 3)
+                {
+                    Console.WriteLine("Bye Bye");
+                    Environment.Exit(0); }
+             
+
+            } while (true);
+
+        }
+    }
+}

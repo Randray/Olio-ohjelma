@@ -1,0 +1,30 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Harjoitus_3._5
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            List<Student> list = new List<Student>();
+            list.Add( new Student { Name = "Kirsi Kyllainen", Address = "Kolhiontie 4 a 12", Age = 21, Nro = "044-Kyllanen" });
+            list.Add(new Student { Name = "Janne Janoinen", Address = "Kolhiontie 4 a 13", Age = 27, Nro = "044-Janoinen" });
+            list.Add(new Student { Name = "Henna Hento", Address = "Kolhiontie 4 a 11", Age = 19, Nro = "044-Hentolol" });
+            list.Add(new Student { Name = "Johennes Joneinen", Address = "Kolhiontie 4 a 18", Age = 21, Nro = "044-Joneinen" });
+            list.Add(new Student { Name = "Mira Myrkyllinen", Address = "Kolhiontie 4 a 9", Age = 21, Nro = "044-Myrkyllinen" });
+
+            foreach(Student st in list)
+            {
+                Console.WriteLine(st.ToString());
+            }
+
+
+        }
+        }
+    }
+
